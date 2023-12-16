@@ -6,6 +6,7 @@
     - Very simple api to call
     - Very lightweight and no external dependencies.
     - simplest ui is comprised with header, main and trail.  main is used to diaplsy value of sensor, trail is used to dispaly name of sensor.
+    - Multiple display UIs are generated dynamically with the number parameter
 
 ### Usage:
 
