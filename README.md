@@ -1,5 +1,6 @@
 # CircuitPython Simple GUI
-## Quickly build your UI in mcu for circuitpython
+
+### Quickly build your UI in mcu for circuitpython
 
 ### Features:
     - Very simple api to call
