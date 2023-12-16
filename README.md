@@ -34,5 +34,6 @@
     gui = GUI(display,head_name="SIMPLE UI",name_list=sens_names,value_list=sens_values,numbers=sens_number)
     while True:
        time.sleep(10)
-       #update sensor data --second line
+       
+       #update sensor data -- second line
        gui.set_main(["{:.1f}".format(random.random()*40),"{:.1f}".format(random.random()*100),"{:.0f}".format((random.random()+1)*1000)])
