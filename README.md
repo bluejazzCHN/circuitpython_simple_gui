@@ -8,6 +8,15 @@
     - simplest ui is comprised with header, main and trail.  main is used to diaplsy value of sensor, trail is used to dispaly name of sensor.
     - Multiple display UIs are generated dynamically with the number parameter
 
+        
+            SIMPLE UI            <---- Header                                                                      Weather Station
+        ---------------------                                                                                 ------------------------
+
+           30        98          <---- Mains( 2 block by parameter number set)                                 32.1     90.3     1050
+            
+        ---------------------                                                                                 -------------------------
+         Temp       Humi         <---- Trails(2 block by parameter number set)                                 Temp      Humi     Pres 
+        
 ### Usage:
 
     import board
