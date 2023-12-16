@@ -1,19 +1,22 @@
-# Quickly build your UI in mcu for circuitpython
+# CircuitPython Simple GUI
+## Quickly build your UI in mcu for circuitpython
 
-## Features:
+### Features:
     - Very simple api to call
     - Very lightweight and no external dependencies.
     - simplest ui is comprised with header, main and trail.  main is used to diaplsy value of sensor, trail is used to dispaly name of sensor.
 
-## Usage:
+### Usage:
 
     import board
     import time
     import displayio
     import adafruit_displayio_ssd1306
     import random
-    from gui import GUI
+    from circuitpython_simple_gui import GUI
+    
     displayio.release_displays()
+    
     WIDTH = 128
     HEIGHT = 64
     i2c = board.I2C()  # uses board.SCL and board.SDA
@@ -22,7 +25,6 @@
     
     #build a weather station to display tempreture , humility, pressure sensor data 
     #only two essential code.
-    
     sens_number =3
     sens_names = ["Temp","Humi","Pres"]
     sens_values = ["","",""]
@@ -33,5 +35,3 @@
        time.sleep(10)
        #update sensor data --second line
        gui.set_main(["{:.1f}".format(random.random()*40),"{:.1f}".format(random.random()*100),"{:.0f}".format((random.random()+1)*1000)])
-   
-    
